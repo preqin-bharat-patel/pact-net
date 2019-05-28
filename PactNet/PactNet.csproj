@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' " >
+    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">
       netstandard1.5
     </TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' " >
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">
       net45; netstandard1.5
     </TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -16,7 +16,8 @@
     <NoWarn>CS1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4'))">
     <Reference Include="Microsoft.CSharp" />
