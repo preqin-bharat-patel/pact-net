@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
     <PackageReference Include="Microsoft.Owin.Hosting" Version="2.1.0" />
     <PackageReference Include="Microsoft.Owin.Security.OAuth" Version="2.1.0" />
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.Owin.Host.HttpListener" Version="4.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="PactNet.Windows" Version="2.4.6" />
@@ -20,6 +21,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+=======
+    <PackageReference Include="Microsoft.Owin.Host.HttpListener" Version="3.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="PactNet.Windows" Version="2.4.4" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+>>>>>>> parent of e0532b7... Updating to the latest pact-net
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\PactNet\PactNet.csproj" />
